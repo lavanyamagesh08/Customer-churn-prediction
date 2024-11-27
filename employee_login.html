@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Churn Echo!!</a>
+    </nav>
+    <body class="user-login-page">
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" style="background-color: rgba(255, 255, 255, 0.9);">
+                    <div class="card-header text-center">
+                        Employee Login
+                    </div>
+                    <div class="card-body">
+                        <form id="employeeLoginForm">
+                            <div class="form-group">
+                                <label for="employeeUsername">Username</label>
+                                <input type="text" id="employeeUsername" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="employeePassword">Password</label>
+                                <input type="password" id="employeePassword" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-block">Login as Employee</button>
+                        </form>
+                        <p class="mt-3 text-center">Don't have an account? <a href="employee_signup.html" id="signupLink">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

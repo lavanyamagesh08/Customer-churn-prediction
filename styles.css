@@ -1,0 +1,731 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Highlighted Text Styling (not used in HTML, but left for potential future use) */
+.highlight-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    text-align: top;
+    padding-top: 60px;  /* Default padding */
+    position: relative;  /* Enable positioning for the transform */
+    transform: translateY(-10px);  /* Move the text slightly upwards */
+}
+
+/* Rectangular Button Styling */
+.center-button {
+    width: 100px;               /* Adjust width for a more rectangular shape */
+    height: 100px;              /* Adjust height for a more prominent button */
+    border-radius: 8px;         /* Slightly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;  /* Fallback color if the image isn't loaded */
+    background-image: url('images/icon.jpg'); /* Set the background image of the button */
+    background-size: contain;   /* Ensures the image is contained within the button */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    transition: transform 0.2s, background-color 0.2s; /* Transition effects */
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+.center-button:hover {
+    background-color: #0056b3;   /* Change background color on hover */
+    transform: scale(1.05);       /* Slightly enlarge on hover */
+}
+
+/* Content Section Styles (not currently in use) */
+.content-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding-left: 220px; /* Ensures the content isn't hidden behind the sidebar */
+}
+
+/* About Content Styling (left-aligned) */
+.about-content {
+    position: absolute;
+    top: 20%;
+    right: 30px;  /* Adjust for left padding */
+    max-width: 600px; /* Optional: Control the width of the content */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Sidebar Styles for consistency */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+/* Section Styling for Contact Page */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the section takes up the full height of the viewport */
+    width: 100%; /* Ensures the section takes up the full width of the viewport */
+    background-image: url('images/contact.jpg'); /* Background image for the section */
+    background-size: cover; /* Ensures the image covers the full section without stretching */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content Section Styling */
+.content-section {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Space between content and buttons */
+}
+
+.content-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Boxes Styling */
+.button-boxes {
+    display: flex;
+    flex-direction: row; /* Stacks the boxes horizontally */
+    gap: 20px; /* Adds space between the boxes */
+    width: 80%; /* Controls the width of the button boxes */
+    justify-content: center; /* Centers the boxes horizontally */
+    margin-top: 30px;
+}
+
+.button-box {
+    width: 30%; /* Each box takes up 30% of the width */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.button-box p {
+    font-size: 16px;
+}
+
+/* Button Box Hover Effect */
+.button-box:hover {
+    transform: translateY(-5px); /* Moves the box slightly up */
+    background-color: #007bff; /* Changes the background color */
+}
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Boxes Styling */
+.button-boxes {
+    display: flex;
+    flex-direction: row; /* Stacks the boxes horizontally */
+    gap: 20px; /* Adds space between the boxes */
+    width: 80%; /* Controls the width of the button boxes */
+    justify-content: center; /* Centers the boxes horizontally */
+    margin-top: 30px;
+}
+
+.button-box {
+    width: 30%; /* Each box takes up 30% of the width */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative; /* Ensure content is positioned relative to the box */
+}
+
+.button-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.button-box p {
+    font-size: 16px;
+}
+
+/* Image inside Button Box Styling */
+.box-image {
+    width: 100%;  /* Make image fill the box */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;  /* Ensures the image covers the space inside the box without distortion */
+}
+
+/* Button Box Hover Effect */
+.button-box:hover {
+    transform: translateY(-5px); /* Moves the box slightly up */
+    background-color: #007bff; /* Changes the background color */
+} 
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Disable scrolling */
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    z-index: 100;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #444;
+}
+
+/* Main Contact Section Styles */
+.contact-section {
+    margin-left: 200px;
+    padding: 50px 20px;
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Center Content Styling */
+.center-content {
+    text-align: center;
+}
+
+/* Highlighted Text */
+.highlight-text {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contact Info Container Styling */
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Member Info Box Styling */
+.info-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for Info Box */
+.info-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Member Photo Styling */
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    text-align: left;
+}
+
+.contact-details h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Social Media Styling */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media ul li {
+    font-size: 20px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media ul li a:hover {
+    background-color: #0056b3;
+}
